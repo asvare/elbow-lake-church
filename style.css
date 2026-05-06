@@ -476,8 +476,8 @@ nav {
   align-items: center;
 }
 
-.split-grid.reverse { direction: rtl; }
-.split-grid.reverse > * { direction: ltr; }
+.split-grid.reverse > *:first-child { order: 2; }
+.split-grid.reverse > *:last-child  { order: 1; }
 
 .split-img {
   border-radius: 12px;
@@ -1087,7 +1087,8 @@ nav {
   .info-inner { grid-template-columns: 1fr 1fr; }
   /* Sermon page */
   .fb-embed-container { padding: 28px 16px; }
-  .split-grid.reverse { direction: ltr; }
+  .split-grid.reverse > *:first-child { order: unset; }
+  .split-grid.reverse > *:last-child  { order: unset; }
   /* Give cards full width on mobile */
   .give-card { padding: 24px 16px; }
   /* Service box */
