@@ -1085,6 +1085,19 @@ nav {
   .footer-grid { grid-template-columns: 1fr; }
   .cta-banner-inner { flex-direction: column; text-align: center; }
   .info-inner { grid-template-columns: 1fr 1fr; }
+  /* Sermon page */
+  .fb-embed-container { padding: 28px 16px; }
+  .split-grid.reverse { direction: ltr; }
+  /* Give cards full width on mobile */
+  .give-card { padding: 24px 16px; }
+  /* Service box */
+  .service-box { padding: 24px 18px; }
+  /* Verse block */
+  .verse-block { padding: 40px 20px; }
+  /* Contact */
+  .contact-icon { width: 40px; height: 40px; font-size: 1rem; }
+  /* Section title smaller on mobile */
+  .section-title { font-size: 1.7rem; }
 }
 
 @media (max-width: 480px) {
