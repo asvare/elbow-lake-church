@@ -406,7 +406,7 @@ nav {
 }
 
 .info-item {
-  padding: 32px 24px;
+  padding: 20px 16px;
   text-align: center;
   border-right: 1px solid rgba(255,255,255,0.1);
   transition: background 0.2s;
@@ -415,8 +415,8 @@ nav {
 .info-item:hover { background: rgba(255,255,255,0.05); }
 
 .info-icon {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
   line-height: 1;
 }
 
@@ -453,7 +453,7 @@ nav {
   background: var(--white);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius);
-  padding: 26px 22px;
+  padding: 20px 18px;
   transition: var(--transition);
   position: relative;
   overflow: hidden;
@@ -478,28 +478,28 @@ nav {
 .feature-card:hover::after { transform: scaleX(1); }
 
 .card-icon {
-  width: 44px; height: 44px;
+  width: 38px; height: 38px;
   background: var(--gold-light);
-  border-radius: 10px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
-  margin-bottom: 14px;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
 .feature-card h3 {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   color: var(--gray-900);
   letter-spacing: -0.01em;
 }
 
 .feature-card p {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   color: var(--gray-500);
-  line-height: 1.75;
+  line-height: 1.6;
 }
 
 /* ============================================================
@@ -557,16 +557,16 @@ nav {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: #f0d080;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .service-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 0;
+  padding: 8px 0;
   border-bottom: 1px solid rgba(255,255,255,0.08);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
 }
 .service-row:last-child { border-bottom: none; padding-bottom: 0; }
 .service-row strong { color: var(--white); font-weight: 600; }
@@ -619,22 +619,22 @@ nav {
   background: var(--white);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius);
-  padding: 28px 20px;
+  padding: 22px 18px;
   text-align: center;
   transition: var(--transition);
 }
 .staff-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-5px); border-color: transparent; }
 
 .staff-avatar {
-  width: 88px; height: 88px;
+  width: 68px; height: 68px;
   border-radius: 50%;
   background: var(--primary-light);
-  margin: 0 auto 20px;
+  margin: 0 auto 12px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   border: 3px solid var(--gray-200);
 }
 .staff-avatar img { width: 100%; height: 100%; object-fit: cover; }
@@ -653,7 +653,7 @@ nav {
   color: var(--gold);
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
 }
 
 .staff-card p {
@@ -720,19 +720,16 @@ nav {
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: var(--radius);
-  padding: 28px 20px;
+  padding: 22px 18px;
   text-align: center;
   transition: var(--transition);
 }
 .give-card:hover { background: rgba(255,255,255,0.09); border-color: rgba(255,255,255,0.2); }
 
 .give-card-amt {
-  font-family: var(--font-display);
-  font-size: 2.4rem;
-  font-weight: 800;
-  color: #f0d080;
-  margin-bottom: 8px;
+  font-size: 1.9rem;
   line-height: 1;
+  margin-bottom: 6px;
 }
 
 .give-card-name {
@@ -746,8 +743,8 @@ nav {
 .give-card-desc {
   font-size: 0.82rem;
   color: rgba(255,255,255,0.42);
-  line-height: 1.65;
-  margin-bottom: 24px;
+  line-height: 1.5;
+  margin-bottom: 16px;
 }
 
 /* ============================================================
@@ -760,7 +757,7 @@ nav {
   align-items: start;
 }
 
-.contact-info { display: flex; flex-direction: column; gap: 20px; }
+.contact-info { display: flex; flex-direction: column; gap: 14px; }
 
 .contact-item {
   display: flex;
@@ -769,13 +766,13 @@ nav {
 }
 
 .contact-icon {
-  width: 46px; height: 46px;
+  width: 36px; height: 36px;
   background: var(--primary-light);
-  border-radius: 10px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.15rem;
+  font-size: 1rem;
   flex-shrink: 0;
 }
 
@@ -1109,7 +1106,7 @@ nav {
 }
 .fb-embed-container:hover { box-shadow: var(--shadow-md); }
 
-.fb-embed-icon { font-size: 2.8rem; line-height: 1; }
+.fb-embed-icon { font-size: 2.2rem; line-height: 1; }
 
 .fb-embed-label {
   font-size: 1.15rem;
