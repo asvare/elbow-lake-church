@@ -583,26 +583,22 @@ nav {
 }
 
 .pillar {
-  background: var(--gray-50);
-  border-radius: var(--radius-sm);
-  padding: 16px;
-  border-left: 3px solid var(--gold);
-  transition: var(--transition);
+  padding-left: 14px;
+  border-left: 2px solid var(--gold);
 }
-.pillar:hover { background: var(--gold-light); }
 
 .pillar h4 {
   font-size: 0.85rem;
   font-weight: 700;
   color: var(--gray-900);
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   letter-spacing: -0.01em;
 }
 
 .pillar p {
   font-size: 0.82rem;
   color: var(--gray-500);
-  line-height: 1.6;
+  line-height: 1.55;
 }
 
 /* ============================================================
@@ -1171,6 +1167,166 @@ nav {
 .fb-btn:hover { background: #1464d8; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(24,119,242,0.35); }
 
 /* ============================================================
+   BELIEFS LIST
+   ============================================================ */
+.beliefs-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 44px;
+  margin-top: 32px;
+}
+
+.belief-item {
+  padding-left: 14px;
+  border-left: 2px solid var(--gold);
+}
+
+.belief-item h3 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 3px;
+  letter-spacing: -0.01em;
+}
+
+.belief-item p {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  line-height: 1.55;
+}
+
+/* ============================================================
+   GIVE METHODS
+   ============================================================ */
+.give-methods {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  margin-top: 36px;
+}
+
+.give-method {
+  padding: 0 32px;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.give-method:first-child { padding-left: 0; }
+.give-method:last-child  { border-right: none; padding-right: 0; }
+
+.give-method-num {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.give-method-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+
+.give-method-desc {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ============================================================
+   SERMON POINTS
+   ============================================================ */
+.sermon-points {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sermon-point {
+  padding-left: 14px;
+  border-left: 2px solid var(--gold);
+}
+
+.sermon-point h3 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 3px;
+  letter-spacing: -0.01em;
+}
+
+.sermon-point p {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  line-height: 1.6;
+}
+
+/* ============================================================
+   STEPS LIST
+   ============================================================ */
+.steps-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-top: 32px;
+}
+
+.step-num {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.steps-list h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+}
+
+.steps-list p {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  line-height: 1.6;
+}
+
+/* ============================================================
+   SERMON ROW (home page)
+   ============================================================ */
+.sermon-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 28px;
+}
+
+.sermon-col {
+  padding-left: 14px;
+  border-left: 2px solid var(--gold);
+}
+
+.sermon-col h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+
+.sermon-col p {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  line-height: 1.6;
+}
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1024px) {
@@ -1183,6 +1339,12 @@ nav {
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
   .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .give-cards { grid-template-columns: 1fr; }
+  .give-methods { grid-template-columns: 1fr; gap: 32px; }
+  .give-method { padding: 0; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 32px; }
+  .give-method:last-child { border-bottom: none; padding-bottom: 0; }
+  .steps-list { grid-template-columns: 1fr; gap: 28px; }
+  .sermon-row { grid-template-columns: 1fr; gap: 28px; }
+  .beliefs-list { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
@@ -1217,6 +1379,7 @@ nav {
   .footer-bottom a { margin-left: 8px; }
   .give-card { padding: 28px 16px; }
   .contact-form { padding: 24px 16px; }
+  .beliefs-list { gap: 12px 0; }
 }
 
 /* ============================================================
