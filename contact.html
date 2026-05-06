@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Directions — Elbow Lake Lutheran Church</title>
+  <meta name="description" content="Find Elbow Lake Lutheran Church at 39924 N Elbow Lake Rd, Waubun, MN 56589. Get directions and contact information.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-name">Elbow Lake Lutheran Church</div>
+        <div class="nav-logo-sub">Waubun, Minnesota</div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="sermons.html">Sermons</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="staff.html">Our Pastor</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="give.html" class="nav-give">Give</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="tag">We Would Love to See You</div>
+    <h1>Contact &amp; Directions</h1>
+    <p>Elbow Lake Lutheran Church is located in Waubun, Minnesota. We would love to connect with you.</p>
+  </div>
+
+  <!-- CONTACT INFO + FORM -->
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="tag">Find Us</div>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-sub">Whether you are looking to visit, have a question, or want to connect with our Pastor, we welcome you to reach out.</p>
+
+          <div class="contact-item">
+            <div class="contact-icon">&#128205;</div>
+            <div>
+              <h4>Address</h4>
+              <p>39924 N Elbow Lake Rd<br>Waubun, MN 56589</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">&#128222;</div>
+            <div>
+              <h4>Phone</h4>
+              <!-- UPDATE: Add actual phone number -->
+              <p>Coming soon</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">&#9993;</div>
+            <div>
+              <h4>Email</h4>
+              <!-- UPDATE: Add actual email address -->
+              <p>Coming soon</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">&#128337;</div>
+            <div>
+              <h4>Sunday Worship</h4>
+              <!-- UPDATE: Add actual service times -->
+              <p>Service times coming soon</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">&#9654;</div>
+            <div>
+              <h4>Watch Online</h4>
+              <p><a href="sermons.html" style="color:var(--primary);text-decoration:underline;">Facebook Live every Sunday</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form">
+          <h3 style="font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:var(--primary-dark);margin-bottom:24px;">Send Us a Message</h3>
+          <!-- This form uses Netlify Forms — works automatically when deployed to Netlify -->
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <p style="display:none;"><label>Do not fill this out: <input name="bot-field"></label></p>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Jane" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">Select a topic...</option>
+                <option value="visit">Planning a Visit</option>
+                <option value="prayer">Prayer Request</option>
+                <option value="pastor">Speak with Pastor</option>
+                <option value="giving">Giving Question</option>
+                <option value="events">Events &amp; Calendar</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="bg-gray" style="padding-top:0;">
+    <div class="container">
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.0!2d-95.9!3d47.18!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s39924+N+Elbow+Lake+Rd%2C+Waubun%2C+MN+56589!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+          width="100%"
+          height="400"
+          style="border:0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Elbow Lake Lutheran Church location map">
+        </iframe>
+      </div>
+      <div style="text-align:center;margin-top:20px;">
+        <a href="https://maps.google.com/?q=39924+N+Elbow+Lake+Rd,+Waubun,+MN+56589" target="_blank" class="btn btn-primary">Open in Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL ARE WELCOME -->
+  <section>
+    <div class="container" style="text-align:center;max-width:600px;">
+      <div class="tag">Open Doors</div>
+      <h2 class="section-title">You Are Always Welcome</h2>
+      <p class="section-sub" style="margin:0 auto 32px;">No matter where you are on your journey of faith, the doors of Elbow Lake Lutheran Church are open to you. We hope to see you soon.</p>
+      <a href="events.html" class="btn btn-gold btn-lg">See Upcoming Events</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-name">Elbow Lake Lutheran Church</div>
+        <div class="footer-brand-loc">Waubun, Minnesota</div>
+        <p>A community of faith rooted in Lutheran tradition, welcoming all who seek God's grace and fellowship.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Church</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="staff.html">Our Pastor</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Worship</h4>
+        <ul>
+          <li><a href="sermons.html">Sermons</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="give.html">Give</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <ul>
+          <li><a href="contact.html">39924 N Elbow Lake Rd</a></li>
+          <li><a href="contact.html">Waubun, MN 56589</a></li>
+          <li><a href="contact.html">Get Directions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Elbow Lake Lutheran Church. Waubun, Minnesota.</span>
+      <div>
+        <a href="contact.html">Contact</a>
+        <a href="give.html">Give</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      var toggle = document.querySelector('.nav-toggle');
+      var links = document.querySelector('.nav-links');
+      if (!toggle || !links) return;
+      toggle.addEventListener('click', function() {
+        links.classList.toggle('is-open');
+        toggle.classList.toggle('is-open');
+      });
+      links.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() {
+          links.classList.remove('is-open');
+          toggle.classList.remove('is-open');
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

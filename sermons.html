@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sermons — Elbow Lake Lutheran Church</title>
+  <meta name="description" content="Watch live and past sermons from Elbow Lake Lutheran Church in Waubun, MN. Our Pastor streams every Sunday on Facebook.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <style>
+    .live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: #dc2626;
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    .live-dot {
+      width: 7px; height: 7px;
+      background: #fff;
+      border-radius: 50%;
+      animation: pulse 1.4s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    .fb-embed-container {
+      background: var(--white);
+      border: 1px solid var(--gray-300);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 28px;
+      text-align: center;
+      gap: 20px;
+    }
+    .fb-embed-icon { font-size: 3rem; }
+    .fb-embed-label {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+    .fb-embed-sub {
+      font-size: 0.9rem;
+      color: var(--gray-500);
+      max-width: 420px;
+      line-height: 1.7;
+    }
+    .fb-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #1877F2;
+      color: #fff;
+      font-weight: 700;
+      padding: 12px 28px;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+      font-family: var(--font-body);
+    }
+    .fb-btn:hover { background: #1464d8; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-name">Elbow Lake Lutheran Church</div>
+        <div class="nav-logo-sub">Waubun, Minnesota</div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="sermons.html">Sermons</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="staff.html">Our Pastor</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="give.html" class="nav-give">Give</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="tag">Word &amp; Worship</div>
+    <h1>Sermons</h1>
+    <p>Our Pastor streams every Sunday service live on Facebook. Watch live or revisit past messages anytime.</p>
+  </div>
+
+  <!-- WATCH LIVE -->
+  <section>
+    <div class="container">
+      <div class="tag">Live Streaming</div>
+      <h2 class="section-title">Watch Our Sunday Sermons</h2>
+      <p class="section-sub">Every Sunday, our Pastor goes live on Facebook during the worship service. You can join from anywhere — at home, on the road, or from across the country.</p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:48px;align-items:start;">
+
+        <!-- Facebook Live Link -->
+        <div class="fb-embed-container">
+          <div class="live-badge"><span class="live-dot"></span> Live Sundays</div>
+          <div class="fb-embed-icon">&#9654;</div>
+          <div class="fb-embed-label">Watch on Facebook Live</div>
+          <div class="fb-embed-sub">Our Pastor streams every Sunday service live on Facebook. Click below to go directly to our Facebook page and watch live or browse past sermons.</div>
+          <!-- UPDATE: Replace # with the pastor's actual Facebook page URL -->
+          <a href="#" target="_blank" class="fb-btn">
+            &#x66;&nbsp; Watch on Facebook
+          </a>
+          <p style="font-size:0.78rem;color:var(--gray-500);margin-top:4px;">Opens Facebook in a new tab. No account required to watch.</p>
+        </div>
+
+        <!-- How It Works -->
+        <div>
+          <div class="feature-card" style="margin-bottom:20px;">
+            <div class="card-icon">&#128205;</div>
+            <h3>Join From Anywhere</h3>
+            <p>Whether you are traveling, homebound, or simply want to worship from home, our live stream brings the service directly to you every Sunday.</p>
+          </div>
+          <div class="feature-card" style="margin-bottom:20px;">
+            <div class="card-icon">&#128196;</div>
+            <h3>Past Sermons Available</h3>
+            <p>All previous Sunday sermons are saved on Facebook and can be watched at any time. Share them with family and friends who are unable to attend in person.</p>
+          </div>
+          <div class="feature-card">
+            <div class="card-icon">&#128276;</div>
+            <h3>Get Notified</h3>
+            <p>Follow our Facebook page and turn on notifications so you never miss a Sunday service or special message from our Pastor.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VERSE -->
+  <div class="verse-block">
+    <div class="verse-text">"Faith comes from hearing, and hearing through the word of Christ."</div>
+    <div class="verse-ref">Romans 10:17</div>
+  </div>
+
+  <!-- HOW TO WATCH -->
+  <section class="bg-gray">
+    <div class="container">
+      <div style="text-align:center;max-width:600px;margin:0 auto 48px;">
+        <div class="tag">Getting Started</div>
+        <h2 class="section-title">How to Watch</h2>
+        <p class="section-sub" style="margin:0 auto;">It is easy to join our Sunday service online. Here is how:</p>
+      </div>
+      <div class="card-grid">
+        <div class="feature-card" style="text-align:center;">
+          <div style="font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--gold);margin-bottom:12px;">1</div>
+          <h3>Visit Our Facebook Page</h3>
+          <p>Click the "Watch on Facebook" button above. You do not need a Facebook account to watch — just click and view.</p>
+        </div>
+        <div class="feature-card" style="text-align:center;">
+          <div style="font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--gold);margin-bottom:12px;">2</div>
+          <h3>Join on Sunday</h3>
+          <p>Our Pastor goes live during Sunday worship. Watch in real time and feel connected to the congregation from wherever you are.</p>
+        </div>
+        <div class="feature-card" style="text-align:center;">
+          <div style="font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--gold);margin-bottom:12px;">3</div>
+          <h3>Watch Anytime</h3>
+          <p>Missed the live service? All sermons are saved on Facebook. Browse the videos tab on our page to catch up on past messages.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN IN PERSON -->
+  <section>
+    <div class="container" style="text-align:center;max-width:640px;">
+      <div class="tag">Worship In Person</div>
+      <h2 class="section-title">We Would Love to See You</h2>
+      <p class="section-sub" style="margin:0 auto 32px;">Nothing replaces gathering together in person. If you are in the Waubun area, we invite you to join us for Sunday worship at Elbow Lake Lutheran Church.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-primary">Get Directions</a>
+        <a href="events.html" class="btn btn-outline-dark">View Service Times</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-name">Elbow Lake Lutheran Church</div>
+        <div class="footer-brand-loc">Waubun, Minnesota</div>
+        <p>A community of faith rooted in Lutheran tradition, welcoming all who seek God's grace and fellowship.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Church</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="staff.html">Our Pastor</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Worship</h4>
+        <ul>
+          <li><a href="sermons.html">Sermons</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="give.html">Give</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <ul>
+          <li><a href="contact.html">39924 N Elbow Lake Rd</a></li>
+          <li><a href="contact.html">Waubun, MN 56589</a></li>
+          <li><a href="contact.html">Get Directions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Elbow Lake Lutheran Church. Waubun, Minnesota.</span>
+      <div>
+        <a href="contact.html">Contact</a>
+        <a href="give.html">Give</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      var toggle = document.querySelector('.nav-toggle');
+      var links = document.querySelector('.nav-links');
+      if (!toggle || !links) return;
+      toggle.addEventListener('click', function() {
+        links.classList.toggle('is-open');
+        toggle.classList.toggle('is-open');
+      });
+      links.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() {
+          links.classList.remove('is-open');
+          toggle.classList.remove('is-open');
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
