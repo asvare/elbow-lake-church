@@ -32,6 +32,68 @@
       line-height: 1.65;
     }
     .calendar-instructions strong { color: var(--gold-dark); }
+
+    /* Event list cards */
+    .event-row {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 20px 24px;
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px solid var(--gray-200);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    .event-date-badge {
+      min-width: 54px;
+      text-align: center;
+      border-radius: 8px;
+      padding: 8px 6px;
+      line-height: 1.2;
+      flex-shrink: 0;
+      color: #fff;
+    }
+    .event-date-badge .month { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; }
+    .event-date-badge .day  { font-size: 1.6rem; font-weight: 800; line-height: 1; }
+    .event-date-badge .day-sm { font-size: 1.4rem; }
+    .event-date-badge .dow  { font-size: 0.7rem; }
+    .event-title  { font-weight: 700; font-size: 1rem; color: var(--primary-dark); }
+    .event-meta   { font-size: 0.88rem; color: var(--gray-500); margin-top: 3px; }
+    .event-desc   { font-size: 0.88rem; color: var(--gray-600); margin-top: 6px; line-height: 1.6; }
+
+    /* Featured speaker bio */
+    .speaker-bio {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      padding: 0 24px 24px;
+      flex-wrap: wrap;
+    }
+    .speaker-bio img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 10px;
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+    .speaker-bio-text { flex: 1; min-width: 200px; }
+    .speaker-name  { font-weight: 700; font-size: 0.95rem; color: var(--primary-dark); margin-bottom: 4px; }
+    .speaker-role  { font-size: 0.82rem; color: var(--gold); font-weight: 600; margin-bottom: 10px; }
+    .speaker-body  { font-size: 0.85rem; color: var(--gray-600); line-height: 1.7; margin: 0; }
+
+    @media (max-width: 480px) {
+      .event-row { gap: 14px; padding: 16px; }
+      .event-date-badge { min-width: 46px; }
+      .event-date-badge .day { font-size: 1.3rem; }
+      .event-date-badge .day-sm { font-size: 1.1rem; }
+      .event-title { font-size: 0.93rem; }
+
+      .speaker-bio { flex-direction: column; align-items: center; text-align: center; padding: 0 16px 20px; gap: 16px; }
+      .speaker-bio img { width: 120px; height: 120px; }
+      .speaker-bio-text { min-width: unset; width: 100%; }
+      .speaker-body { text-align: left; }
+    }
   </style>
 </head>
 <body>
@@ -75,128 +137,127 @@
       <div style="display:flex;flex-direction:column;gap:12px;">
 
         <!-- June 3 -->
-        <div style="display:flex;gap:20px;align-items:flex-start;padding:20px 24px;background:#fff;border-radius:var(--radius);border:1px solid var(--gray-200);box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-          <div style="min-width:54px;text-align:center;background:var(--primary-dark);color:#fff;border-radius:8px;padding:8px 6px;line-height:1.2;">
-            <div style="font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;">Jun</div>
-            <div style="font-size:1.6rem;font-weight:800;line-height:1;">3</div>
-            <div style="font-size:0.7rem;">Wed</div>
+        <div class="event-row">
+          <div class="event-date-badge" style="background:var(--primary-dark);">
+            <div class="month">Jun</div>
+            <div class="day">3</div>
+            <div class="dow">Wed</div>
           </div>
           <div>
-            <div style="font-weight:700;font-size:1rem;color:var(--primary-dark);">Movie Night &amp; Scalloped Potatoes &amp; Ham Potluck</div>
-            <div style="font-size:0.88rem;color:var(--gray-500);margin-top:3px;">5:30 PM</div>
-            <div style="font-size:0.88rem;color:var(--gray-600);margin-top:6px;">Screening of <em>I Am Israel</em> along with a potluck meal. Bring a dish to share. All are welcome.</div>
+            <div class="event-title">Movie Night &amp; Scalloped Potatoes &amp; Ham Potluck</div>
+            <div class="event-meta">5:30 PM</div>
+            <div class="event-desc">Screening of <em>I Am Israel</em> along with a potluck meal. Bring a dish to share. All are welcome.</div>
           </div>
         </div>
 
         <!-- June 7 -->
-        <div style="display:flex;gap:20px;align-items:flex-start;padding:20px 24px;background:#fff;border-radius:var(--radius);border:1px solid var(--gray-200);box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-          <div style="min-width:54px;text-align:center;background:var(--gold);color:#fff;border-radius:8px;padding:8px 6px;line-height:1.2;">
-            <div style="font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;">Jun</div>
-            <div style="font-size:1.6rem;font-weight:800;line-height:1;">7</div>
-            <div style="font-size:0.7rem;">Sun</div>
+        <div class="event-row">
+          <div class="event-date-badge" style="background:var(--gold);">
+            <div class="month">Jun</div>
+            <div class="day">7</div>
+            <div class="dow">Sun</div>
           </div>
           <div>
-            <div style="font-weight:700;font-size:1rem;color:var(--primary-dark);">Sunday Worship Service</div>
-            <div style="font-size:0.88rem;color:var(--gray-500);margin-top:3px;">9:00 AM</div>
-            <div style="font-size:0.88rem;color:var(--gray-600);margin-top:6px;">Weekly worship service. All are welcome to join us.</div>
+            <div class="event-title">Sunday Worship Service</div>
+            <div class="event-meta">9:00 AM</div>
+            <div class="event-desc">Weekly worship service. All are welcome to join us.</div>
           </div>
         </div>
 
         <!-- June 10 -->
-        <div style="display:flex;gap:20px;align-items:flex-start;padding:20px 24px;background:#fff;border-radius:var(--radius);border:1px solid var(--gray-200);box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-          <div style="min-width:54px;text-align:center;background:var(--primary-dark);color:#fff;border-radius:8px;padding:8px 6px;line-height:1.2;">
-            <div style="font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;">Jun</div>
-            <div style="font-size:1.6rem;font-weight:800;line-height:1;">10</div>
-            <div style="font-size:0.7rem;">Wed</div>
+        <div class="event-row">
+          <div class="event-date-badge" style="background:var(--primary-dark);">
+            <div class="month">Jun</div>
+            <div class="day">10</div>
+            <div class="dow">Wed</div>
           </div>
           <div>
-            <div style="font-weight:700;font-size:1rem;color:var(--primary-dark);">Women's Bible Study</div>
-            <div style="font-size:0.88rem;color:var(--gray-500);margin-top:3px;">10:30 AM &mdash; Mia's</div>
-            <div style="font-size:0.88rem;color:var(--gray-600);margin-top:6px;">Women's Bible study and fellowship. Open to all women of the congregation.</div>
+            <div class="event-title">Women's Bible Study</div>
+            <div class="event-meta">10:30 AM &mdash; Mia's</div>
+            <div class="event-desc">Women's Bible study and fellowship. Open to all women of the congregation.</div>
           </div>
         </div>
 
         <!-- June 14 -->
-        <div style="display:flex;gap:20px;align-items:flex-start;padding:20px 24px;background:#fff;border-radius:var(--radius);border:1px solid var(--gray-200);box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-          <div style="min-width:54px;text-align:center;background:var(--gold);color:#fff;border-radius:8px;padding:8px 6px;line-height:1.2;">
-            <div style="font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;">Jun</div>
-            <div style="font-size:1.6rem;font-weight:800;line-height:1;">14</div>
-            <div style="font-size:0.7rem;">Sun</div>
+        <div class="event-row">
+          <div class="event-date-badge" style="background:var(--gold);">
+            <div class="month">Jun</div>
+            <div class="day">14</div>
+            <div class="dow">Sun</div>
           </div>
           <div>
-            <div style="font-weight:700;font-size:1rem;color:var(--primary-dark);">Sunday Worship &mdash; Special Music</div>
-            <div style="font-size:0.88rem;color:var(--gray-500);margin-top:3px;">9:00 AM &mdash; Flag Day</div>
-            <div style="font-size:0.88rem;color:var(--gray-600);margin-top:6px;">Featuring Tim Stoll Music and Mike Blackburn. A special morning of worship.</div>
+            <div class="event-title">Sunday Worship &mdash; Special Music</div>
+            <div class="event-meta">9:00 AM &mdash; Flag Day</div>
+            <div class="event-desc">Featuring Tim Stoll Music and Mike Blackburn. A special morning of worship.</div>
           </div>
         </div>
 
         <!-- June 21 — Featured -->
         <div style="background:#fff;border-radius:var(--radius);border:2px solid var(--gold);box-shadow:0 2px 12px rgba(0,0,0,0.08);overflow:hidden;">
-          <div style="background:var(--gold);padding:8px 20px;display:flex;align-items:center;gap:10px;">
+          <div style="background:var(--gold);padding:8px 20px;">
             <span style="color:#fff;font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:.08em;">Featured Event &mdash; Father's Day</span>
           </div>
-          <div style="display:flex;gap:20px;align-items:flex-start;padding:20px 24px;">
-            <div style="min-width:54px;text-align:center;background:var(--gold);color:#fff;border-radius:8px;padding:8px 6px;line-height:1.2;flex-shrink:0;">
-              <div style="font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;">Jun</div>
-              <div style="font-size:1.6rem;font-weight:800;line-height:1;">21</div>
-              <div style="font-size:0.7rem;">Sun</div>
+          <div class="event-row" style="border:none;box-shadow:none;border-radius:0;">
+            <div class="event-date-badge" style="background:var(--gold);">
+              <div class="month">Jun</div>
+              <div class="day">21</div>
+              <div class="dow">Sun</div>
             </div>
-            <div style="flex:1;">
-              <div style="font-weight:700;font-size:1.05rem;color:var(--primary-dark);">Sunday Worship &mdash; Guest Speaker Brad Brandon</div>
-              <div style="font-size:0.88rem;color:var(--gray-500);margin-top:3px;">9:00 AM &mdash; Father's Day Sunday</div>
-              <div style="font-size:0.88rem;color:var(--gray-600);margin-top:6px;line-height:1.6;">Pastor Brad Brandon, founder of Across Nigeria, joins us to share about his mission work in northern Nigeria and West Africa. Don't miss this powerful morning of worship and testimony.</div>
+            <div>
+              <div class="event-title">Sunday Worship &mdash; Guest Speaker Brad Brandon</div>
+              <div class="event-meta">9:00 AM &mdash; Father's Day Sunday</div>
+              <div class="event-desc">Pastor Brad Brandon, founder of Across Nigeria, joins us to share about his mission work in northern Nigeria and West Africa. Don't miss this powerful morning of worship and testimony.</div>
             </div>
           </div>
-          <!-- Speaker Bio -->
-          <div style="display:flex;gap:24px;align-items:flex-start;padding:0 24px 24px;flex-wrap:wrap;">
-            <img src="images/pastor-brad.jpg" alt="Pastor Brad Brandon" style="width:140px;height:140px;object-fit:cover;border-radius:10px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.12);">
-            <div style="flex:1;min-width:220px;">
-              <div style="font-weight:700;font-size:0.95rem;color:var(--primary-dark);margin-bottom:4px;">Brad Brandon</div>
-              <div style="font-size:0.82rem;color:var(--gold);font-weight:600;margin-bottom:10px;">Founder &amp; CEO, Across Nigeria</div>
-              <p style="font-size:0.85rem;color:var(--gray-600);line-height:1.7;margin:0;">Brad Brandon spent over twenty years in pastoral ministry and a decade as a daily drive-time radio talk show host for Salem Communications. His writing has appeared in the Daily Wire, Washington Times, Townhall, and The Christian Post, and he is a regular contributor on Fox News, Newsmax, Glenn Beck, and Washington Watch. Since 2018, he has served on foreign mission fields in high-risk, highly persecuted regions, primarily in northern Nigeria and West Africa. Through Across Nigeria, Pastor Brad and his team are bringing education and literacy training to Muslim communities while providing aid and relief to Christian communities facing intense persecution.</p>
+          <div class="speaker-bio">
+            <img src="images/pastor-brad.jpg" alt="Pastor Brad Brandon">
+            <div class="speaker-bio-text">
+              <div class="speaker-name">Brad Brandon</div>
+              <div class="speaker-role">Founder &amp; CEO, Across Nigeria</div>
+              <p class="speaker-body">Brad Brandon spent over twenty years in pastoral ministry and a decade as a daily drive-time radio talk show host for Salem Communications. His writing has appeared in the Daily Wire, Washington Times, Townhall, and The Christian Post, and he is a regular contributor on Fox News, Newsmax, Glenn Beck, and Washington Watch. Since 2018, he has served on foreign mission fields in high-risk, highly persecuted regions, primarily in northern Nigeria and West Africa. Through Across Nigeria, Pastor Brad and his team are bringing education and literacy training to Muslim communities while providing aid and relief to Christian communities facing intense persecution.</p>
             </div>
           </div>
         </div>
 
         <!-- June 26-27 -->
-        <div style="display:flex;gap:20px;align-items:flex-start;padding:20px 24px;background:#fff;border-radius:var(--radius);border:1px solid var(--gray-200);box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-          <div style="min-width:54px;text-align:center;background:var(--primary-dark);color:#fff;border-radius:8px;padding:8px 6px;line-height:1.2;">
-            <div style="font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;">Jun</div>
-            <div style="font-size:1.4rem;font-weight:800;line-height:1;">26&ndash;27</div>
-            <div style="font-size:0.7rem;">Fri&ndash;Sat</div>
+        <div class="event-row">
+          <div class="event-date-badge" style="background:var(--primary-dark);">
+            <div class="month">Jun</div>
+            <div class="day day-sm">26&ndash;27</div>
+            <div class="dow">Fri&ndash;Sat</div>
           </div>
           <div>
-            <div style="font-weight:700;font-size:1rem;color:var(--primary-dark);">Ukraine Missionaries</div>
-            <div style="font-size:0.88rem;color:var(--gray-500);margin-top:3px;">June 26 &amp; 27 &mdash; Time TBD</div>
-            <div style="font-size:0.88rem;color:var(--gray-600);margin-top:6px;">Visiting missionaries from Ukraine share their work and testimony. Don't miss this special two-day event.</div>
+            <div class="event-title">Ukraine Missionaries</div>
+            <div class="event-meta">June 26 &amp; 27 &mdash; Time TBD</div>
+            <div class="event-desc">Visiting missionaries from Ukraine share their work and testimony. Don't miss this special two-day event.</div>
           </div>
         </div>
 
         <!-- June 27 -->
-        <div style="display:flex;gap:20px;align-items:flex-start;padding:20px 24px;background:#fff;border-radius:var(--radius);border:1px solid var(--gray-200);box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-          <div style="min-width:54px;text-align:center;background:var(--primary-dark);color:#fff;border-radius:8px;padding:8px 6px;line-height:1.2;">
-            <div style="font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;">Jun</div>
-            <div style="font-size:1.6rem;font-weight:800;line-height:1;">27</div>
-            <div style="font-size:0.7rem;">Sat</div>
+        <div class="event-row">
+          <div class="event-date-badge" style="background:var(--primary-dark);">
+            <div class="month">Jun</div>
+            <div class="day">27</div>
+            <div class="dow">Sat</div>
           </div>
           <div>
-            <div style="font-weight:700;font-size:1rem;color:var(--primary-dark);">ATV Ride, Breakfast &amp; Cookout</div>
-            <div style="font-size:0.88rem;color:var(--gray-500);margin-top:3px;">Location TBD</div>
-            <div style="font-size:0.88rem;color:var(--gray-600);margin-top:6px;">A day of outdoor fun with an ATV ride, breakfast, and cookout. A great community event for all ages.</div>
+            <div class="event-title">ATV Ride, Breakfast &amp; Cookout</div>
+            <div class="event-meta">Location TBD</div>
+            <div class="event-desc">A day of outdoor fun with an ATV ride, breakfast, and cookout. A great community event for all ages.</div>
           </div>
         </div>
 
         <!-- June 28 -->
-        <div style="display:flex;gap:20px;align-items:flex-start;padding:20px 24px;background:#fff;border-radius:var(--radius);border:1px solid var(--gray-200);box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-          <div style="min-width:54px;text-align:center;background:var(--gold);color:#fff;border-radius:8px;padding:8px 6px;line-height:1.2;">
-            <div style="font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;">Jun</div>
-            <div style="font-size:1.6rem;font-weight:800;line-height:1;">28</div>
-            <div style="font-size:0.7rem;">Sun</div>
+        <div class="event-row">
+          <div class="event-date-badge" style="background:var(--gold);">
+            <div class="month">Jun</div>
+            <div class="day">28</div>
+            <div class="dow">Sun</div>
           </div>
           <div>
-            <div style="font-weight:700;font-size:1rem;color:var(--primary-dark);">Sunday Worship &mdash; Pastor Gary Fuller</div>
-            <div style="font-size:0.88rem;color:var(--gray-500);margin-top:3px;">9:00 AM</div>
-            <div style="font-size:0.88rem;color:var(--gray-600);margin-top:6px;">Weekly worship service with Pastor Gary Fuller. All are welcome.</div>
+            <div class="event-title">Sunday Worship &mdash; Pastor Gary Fuller</div>
+            <div class="event-meta">9:00 AM</div>
+            <div class="event-desc">Weekly worship service with Pastor Gary Fuller. All are welcome.</div>
           </div>
         </div>
 
