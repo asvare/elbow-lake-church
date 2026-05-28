@@ -276,7 +276,7 @@ nav {
    ============================================================ */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   background:
     linear-gradient(160deg, rgba(10,22,44,0.82) 0%, rgba(15,32,64,0.76) 60%, rgba(30,58,95,0.70) 100%),
     url('images/hero.jpg') center/cover no-repeat;
@@ -301,7 +301,7 @@ nav {
   position: relative;
   z-index: 1;
   width: 100%;
-  padding: 140px 32px 100px;
+  padding: 100px 32px 72px;
   max-width: 860px;
   margin: 0 auto;
   color: var(--white);
@@ -667,7 +667,7 @@ nav {
 .page-hero {
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
   color: var(--white);
-  padding: 128px 32px 56px;
+  padding: 88px 32px 44px;
   text-align: center;
   position: relative;
   overflow: hidden;
