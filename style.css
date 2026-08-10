@@ -102,7 +102,7 @@ ul { list-style: none; }
 .text-white .section-title { color: var(--white); }
 .text-white .section-sub   { color: rgba(255,255,255,0.65); }
 
-section { padding: 72px 0; }
+section { padding: 56px 0; }
 .bg-gray { background: var(--gray-50); }
 .bg-dark { background: var(--primary-dark); }
 .bg-navy { background: var(--primary); }
@@ -294,7 +294,7 @@ nav {
   position: relative;
   z-index: 1;
   width: 100%;
-  padding: 120px 32px 72px;
+  padding: 110px 32px 60px;
   max-width: 860px;
   margin: 0 auto;
   color: var(--white);
@@ -399,7 +399,7 @@ nav {
    ============================================================ */
 .mission-strip {
   background: var(--primary-light);
-  padding: 56px 0;
+  padding: 44px 0;
   text-align: center;
   border-top: 1px solid var(--gray-200);
   border-bottom: 1px solid var(--gray-200);
@@ -506,7 +506,7 @@ nav {
 .page-hero {
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
   color: var(--white);
-  padding: 110px 32px 56px;
+  padding: 100px 32px 44px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -644,7 +644,7 @@ nav {
 .verse-block {
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
   color: var(--white);
-  padding: 56px 32px;
+  padding: 44px 32px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -691,7 +691,7 @@ nav {
 .site-footer {
   background: var(--primary-dark);
   color: rgba(255,255,255,0.5);
-  padding: 56px 32px 28px;
+  padding: 44px 32px 24px;
 }
 
 .footer-grid {
@@ -1049,14 +1049,14 @@ nav {
 }
 
 @media (max-width: 768px) {
-  section { padding: 52px 0; }
+  section { padding: 40px 0; }
   .container { padding: 0 20px; }
   .pillars-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
   .nav-toggle { display: flex; }
-  .hero { min-height: 480px; }
+  .hero { min-height: 440px; }
   .hero h1 { font-size: 2.4rem; }
-  .hero-content { padding: 100px 20px 60px; }
+  .hero-content { padding: 90px 20px 52px; }
   .hero-actions { flex-direction: column; align-items: stretch; width: 100%; max-width: 320px; }
   .hero-actions .btn { text-align: center; }
   .hero-secondary-links { flex-direction: column; gap: 8px; }
@@ -1064,11 +1064,11 @@ nav {
   .footer-grid { grid-template-columns: 1fr; }
   .info-inner { grid-template-columns: 1fr 1fr; }
   .fb-embed-container { padding: 24px 16px; }
-  .verse-block { padding: 44px 20px; }
+  .verse-block { padding: 36px 20px; }
   .service-box { padding: 20px 16px; }
-  .page-hero { padding: 110px 20px 52px; }
+  .page-hero { padding: 100px 20px 40px; }
   .values-grid { grid-template-columns: 1fr 1fr; }
-  .mission-strip { padding: 44px 0; }
+  .mission-strip { padding: 36px 0; }
 }
 
 @media (max-width: 480px) {
