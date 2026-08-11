@@ -269,7 +269,7 @@ nav {
    ============================================================ */
 .hero {
   position: relative;
-  min-height: 580px;
+  min-height: 420px;
   background:
     linear-gradient(160deg, rgba(10,22,44,0.84) 0%, rgba(15,32,64,0.78) 60%, rgba(30,58,95,0.72) 100%),
     url('images/church.png') center/cover no-repeat;
@@ -294,7 +294,7 @@ nav {
   position: relative;
   z-index: 1;
   width: 100%;
-  padding: 110px 32px 60px;
+  padding: 86px 32px 40px;
   max-width: 860px;
   margin: 0 auto;
   color: var(--white);
@@ -306,7 +306,7 @@ nav {
 
 .hero h1 {
   font-family: var(--font-display);
-  font-size: clamp(2.8rem, 7vw, 5.2rem);
+  font-size: clamp(2rem, 4.5vw, 3.6rem);
   font-weight: 900;
   line-height: 1.08;
   letter-spacing: -0.02em;
@@ -322,7 +322,7 @@ nav {
   font-size: clamp(0.88rem, 1.8vw, 1rem);
   color: rgba(255,255,255,0.72);
   max-width: 540px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
   line-height: 1.6;
   font-style: italic;
 }
@@ -335,13 +335,13 @@ nav {
   justify-content: center;
 }
 
-.btn-hero { padding: 16px 40px; font-size: 0.95rem; border-radius: var(--radius-sm); }
+.btn-hero { padding: 13px 30px; font-size: 0.9rem; border-radius: var(--radius-sm); }
 
 .hero-secondary-links {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-top: 20px;
+  margin-top: 14px;
   font-size: 0.85rem;
   color: rgba(255,255,255,0.4);
 }
@@ -1165,9 +1165,9 @@ nav {
   .pillars-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
   .nav-toggle { display: flex; }
-  .hero { min-height: 440px; }
-  .hero h1 { font-size: 2.4rem; }
-  .hero-content { padding: 90px 20px 52px; }
+  .hero { min-height: 340px; }
+  .hero h1 { font-size: 1.9rem; }
+  .hero-content { padding: 78px 20px 36px; }
   .hero-actions { flex-direction: column; align-items: stretch; width: 100%; max-width: 320px; }
   .hero-actions .btn { text-align: center; }
   .hero-secondary-links { flex-direction: column; gap: 8px; }
