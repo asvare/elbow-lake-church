@@ -59,75 +59,75 @@
     <div class="container">
       <div class="gallery-grid">
 
-        <div class="gallery-item" data-caption="Summer ATV ride along the trail">
+        <div class="gallery-item">
           <img src="images/1.jpg" alt="ATV ride along the trail" loading="lazy">
         </div>
 
-        <div class="gallery-item" data-caption="A great day on the water">
+        <div class="gallery-item">
           <img src="images/2.jpg" alt="Congregation members fishing together" loading="lazy">
         </div>
 
-        <div class="gallery-item" data-caption="Together by the lake in the fall">
+        <div class="gallery-item">
           <img src="images/3.jpg" alt="Congregation members gathered by the lake in fall" loading="lazy">
         </div>
 
-        <div class="gallery-item" data-caption="Ready to ride in the fall colors">
+        <div class="gallery-item">
           <img src="images/4.jpg" alt="ATVs parked among fall foliage" loading="lazy">
         </div>
 
-        <div class="gallery-item" data-caption="Riding through the fall foliage">
+        <div class="gallery-item">
           <img src="images/5.jpg" alt="ATVs riding through fall foliage" loading="lazy">
         </div>
 
-        <div class="gallery-item" data-caption="The Elbow Lake family">
+        <div class="gallery-item">
           <img src="images/6.jpg" alt="Large congregation group photo outside the church building" loading="lazy">
         </div>
 
-        <div class="gallery-item" data-caption="A peaceful afternoon by the lake">
+        <div class="gallery-item">
           <img src="images/7.jpg" alt="ATVs parked by a lake" loading="lazy">
         </div>
 
-        <div class="gallery-item" data-caption="Baptism in the lake">
+        <div class="gallery-item">
           <img src="images/8.jpg" alt="Pastor Mark performing a baptism in the lake" loading="lazy">
         </div>
 
-        <div class="gallery-item" data-caption="Baptism in the lake">
+        <div class="gallery-item">
           <img src="images/9.jpg" alt="A baptism ceremony in the lake" loading="lazy">
         </div>
 
-        <div class="gallery-item" data-caption="Volunteers caring for the church">
+        <div class="gallery-item">
           <img src="images/10.jpg" alt="Volunteer doing carpentry work on saw horses" loading="lazy">
         </div>
 
-        <div class="gallery-item" data-caption="Installing new carpet together">
+        <div class="gallery-item">
           <img src="images/11.jpg" alt="Two people laying carpet inside the church" loading="lazy">
         </div>
 
-        <div class="gallery-item" data-caption="Sunday Service at 9:00 AM">
+        <div class="gallery-item">
           <img src="images/12.jpg" alt="Elbow Lake Lutheran Church road sign with wooden cross" loading="lazy">
         </div>
 
-        <div class="gallery-item" data-caption="Newly renovated church interior">
+        <div class="gallery-item">
           <img src="images/13.jpg" alt="Renovated church interior with new carpet and knotty pine wainscoting" loading="lazy">
         </div>
 
-        <div class="gallery-item" data-caption="Community Thanksgiving potluck">
+        <div class="gallery-item">
           <img src="images/14.jpg" alt="Community Thanksgiving potluck dinner" loading="lazy">
         </div>
 
-        <div class="gallery-item" data-caption="Music and smiles at church">
+        <div class="gallery-item">
           <img src="images/15.jpg" alt="Kids with a guitar and smiling faces at church" loading="lazy">
         </div>
 
-        <div class="gallery-item" data-caption="Filling up at the Thanksgiving potluck">
+        <div class="gallery-item">
           <img src="images/16.jpg" alt="Congregation members in line at the Thanksgiving potluck" loading="lazy">
         </div>
 
-        <div class="gallery-item" data-caption="Desserts and fellowship">
+        <div class="gallery-item">
           <img src="images/17.jpg" alt="Holiday dessert and food table at church" loading="lazy">
         </div>
 
-        <div class="gallery-item" data-caption="Volunteer work outside the church">
+        <div class="gallery-item">
           <img src="images/18.jpg" alt="Volunteer doing carpentry work outside next to the church sign" loading="lazy">
         </div>
 
@@ -205,10 +205,6 @@
       <img src="" alt="" id="lightbox-img">
     </div>
     <button class="lightbox-next" id="lightbox-next" aria-label="Next photo">&#8594;</button>
-    <div class="lightbox-info">
-      <div class="lightbox-caption" id="lightbox-caption"></div>
-      <div class="lightbox-counter" id="lightbox-counter"></div>
-    </div>
   </div>
 
   <script>
@@ -233,17 +229,13 @@
       var items   = Array.from(document.querySelectorAll('.gallery-item'));
       var lightbox = document.getElementById('lightbox');
       var lbImg   = document.getElementById('lightbox-img');
-      var lbCap   = document.getElementById('lightbox-caption');
-      var lbCount = document.getElementById('lightbox-counter');
       var current = 0;
 
       function show(index) {
         current = (index + items.length) % items.length;
-        var item = items[current];
-        lbImg.src = item.querySelector('img').src;
-        lbImg.alt = item.querySelector('img').alt;
-        lbCap.textContent = item.getAttribute('data-caption') || '';
-        lbCount.textContent = (current + 1) + ' of ' + items.length;
+        var img = items[current].querySelector('img');
+        lbImg.src = img.src;
+        lbImg.alt = img.alt;
       }
 
       function open(index) {

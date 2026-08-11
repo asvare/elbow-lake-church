@@ -1141,25 +1141,6 @@ nav {
 .lightbox-next { right: 20px; }
 .lightbox-prev:hover, .lightbox-next:hover { background: rgba(255,255,255,0.24); }
 
-.lightbox-info {
-  position: fixed;
-  bottom: 20px; left: 0; right: 0;
-  text-align: center;
-  pointer-events: none;
-}
-
-.lightbox-caption {
-  color: rgba(255,255,255,0.75);
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.lightbox-counter {
-  font-size: 0.72rem;
-  color: rgba(255,255,255,0.35);
-  margin-top: 5px;
-  letter-spacing: 0.06em;
-}
 
 /* ============================================================
    RESPONSIVE
