@@ -1032,6 +1032,72 @@ nav {
 }
 
 /* ============================================================
+   GIVE BANNER (home page — compact horizontal strip)
+   ============================================================ */
+.give-banner {
+  background: var(--primary-dark);
+  padding: 22px 32px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.give-banner-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.give-banner-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.01em;
+  margin-bottom: 3px;
+}
+
+.give-banner-sub {
+  font-size: 0.87rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.5;
+}
+
+/* ============================================================
+   VISIT GRID (home page — Plan Your Visit)
+   ============================================================ */
+.visit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.visit-item {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  padding: 16px 18px;
+}
+
+.visit-label {
+  font-size: 0.67rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: var(--gold-dark);
+  margin-bottom: 5px;
+}
+
+.visit-value {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  line-height: 1.4;
+}
+
+/* ============================================================
    GALLERY (gallery page)
    ============================================================ */
 .gallery-grid {
@@ -1156,6 +1222,8 @@ nav {
 }
 
 @media (max-width: 768px) {
+  .give-banner { padding: 20px; }
+  .give-banner-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
   .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
   .lightbox-img-wrap { padding: 60px 60px; }
   section { padding: 40px 0; }
